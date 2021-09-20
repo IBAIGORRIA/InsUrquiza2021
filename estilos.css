@@ -1,19 +1,46 @@
-body{
+body {
     background-image: url(img/urna.jpg);
 }
-header{
+
+header {
     background-color: #9dbb79;
     color: #141204;
 }
-.banner-wrapper{
+
+h1.titulo-header-item {}
+
+.banner-wrapper {
     background-color: #d5d694;
     color: #76bb86;
 }
-.center-page{
 
+.center-page {
     color: #141204;
 }
-footer{
+
+footer {
     background-color: #99582a;
     color: #8e443d;
 }
+
+.header-wrapper {
+    /* para acomodarlo en grilla*/
+    display: grid;
+    /* Determina las filas / columnas */
+    grid-template: 0.4fr 0.2fr 0.4fr / 100%;
+    grid-template-areas: "title-header" "menu-nav-container";
+}
+
+.title-header {
+    grid-area: "title-header";
+}
+
+.menu-nav-container {
+    grid-area: "li";
+}
+
+.menu-nav {
+    display: inline-flex;
+}
+
+.item-nav {}
